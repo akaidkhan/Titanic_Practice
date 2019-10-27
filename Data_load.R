@@ -1,6 +1,6 @@
 
 train <- read.csv("train.csv")
-
+s
 train
 View(train)
 str(train)
