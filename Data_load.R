@@ -4,6 +4,8 @@ train <- read.csv("train.csv")
 train
 View(train)
 str(train)
-train
 
+test <- read.csv("test.csv")
+test
+View(test)
 
