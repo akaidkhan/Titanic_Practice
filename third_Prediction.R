@@ -1,17 +1,3 @@
-# Set the working directory
-
-#setwd ("~/datasets/titanic")
-
-# Import the training set: train
-# Your working directory might vary
-
-train <- read.csv ("~/datasets/titanic/train.csv")
-
-# Import the test set too -> test dataframe
-# Your working directory might vary
-
-test <- read.csv("~/datasets/titanic/test.csv")
-
 # Need to create subsets of Fare
 
 train$Fare2 <- '30+'
@@ -49,7 +35,7 @@ aggregate(Survived ~ Fare2 + Pclass + Sex, data=train, FUN=function(x) {sum(x)/l
 
 aggregate(Survived ~ Fare2 + Pclass + Sex, data=train, FUN=function(x) {sum(x)/length(x) * 100}
           
-aggregate((Survived ~ Fare2 + Pclass + Sex, data=train, FUN=function(x) {sum(x)/length(x)})
+          aggregate(Survived ~ Fare2 + Pclass + Sex, data=train, FUN=function(x) {sum(x)/length(x)})
           
           # Create new column in test set with our prediction that everyone dies
           test$Survived <- 0
@@ -73,5 +59,3 @@ aggregate((Survived ~ Fare2 + Pclass + Sex, data=train, FUN=function(x) {sum(x)/
           # Finally, time to submit it to Kaggle.com
           
           write.csv (prediction3rd, file = "prediction3.csv", row.names=FALSE)
-          
-          
