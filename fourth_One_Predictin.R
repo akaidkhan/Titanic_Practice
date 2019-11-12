@@ -1,5 +1,4 @@
 # Set working directory and import datafiles
-# Your working directory might vary
 
 
 train <- read.csv("C:/Users/Akaid/Desktop/Titanic_Practice/train.csv")
