@@ -59,3 +59,5 @@ aggregate(Survived ~ Fare2 + Pclass + Sex, data=train, FUN=function(x) {sum(x)/l
           # Finally, time to submit it to Kaggle.com
           
           write.csv (prediction3rd, file = "prediction3.csv", row.names=FALSE)
+          
+          

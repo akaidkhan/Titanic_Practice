@@ -14,4 +14,5 @@ test$Survived[test$sex == 'female'] <- 1
 
 prediction2 <- data.frame(PassengerId = test$PassengerId, Survived = test$Survived)
 write.csv(prediction2, file = "prediction2.csv", row.names = FALSE)
+############################
 
