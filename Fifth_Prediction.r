@@ -2,8 +2,9 @@
 # Your working directory might vary
 getwd()
 
-train <- read.csv("C:/Users/Akaid/Desktop/Titanic_Practice/train.csv")
-test <- read.csv("C:/Users/Akaid/Desktop/Titanic_Practice/test.csv")
+train <- read.csv("E:/Works/Data Science/Titanic_Practice/train.csv")
+
+test <- read.csv("E:/Works/Data Science/Titanic_Practice/test.csv")
 
 # Can we see a name?
 train$Name[1]
